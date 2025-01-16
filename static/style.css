@@ -52,6 +52,18 @@ body {
     margin-top: 10px;
 }
 
+@media only screen and (max-width: 768px){
+    .main-card-footer{
+        display: grid;
+        justify-content:center;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .generate-btn{
+        margin-top: 10px;
+    }
+}
+
 .my-btn{
     background: rgb(255, 255, 255);
     box-shadow: 0 8px 32px 0 rgba(114, 117, 160, 0.37);
@@ -63,11 +75,18 @@ body {
 }
 
 .text-image{
-    font-size: 100pt;
+    font-size: 60pt;
     text-align: center;
     text-shadow: rgb(110, 110, 110) 0px 0px 1px;
     color: aliceblue;
     /* min-height: 180px; */
+}
+
+@media only screen and (max-width: 1067px){
+    .text-image{
+        /* min-height: 90px; */
+        font-size: 40pt;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -78,7 +97,10 @@ body {
 }
 
 .mobile-logo{
-    display: none;
+    /* display: none; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 @media only screen and (max-width: 768px){
