@@ -1,0 +1,107 @@
+body {
+    /* background-image: url("./slopes.webp"); */
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.saira-stencil-one-regular {
+    font-family: "Saira Stencil One", serif;
+    font-weight:400;
+    font-style:normal;
+}
+
+.bg-image {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.outer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+.main-card{
+    width: 50%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .main-card{
+        width: 80%;
+    }
+}
+
+.main-card-body{
+    margin-top: 10px;
+}
+
+.main-card-footer{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+
+.my-btn{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(114, 117, 160, 0.37);
+    /* backdrop-filter: blur(1.5px); */
+    /* -webkit-backdrop-filter: blur(1.5px); */
+    border-radius: 10px;
+    min-width: 30%;
+    /* background-color: none; */
+}
+
+.text-image{
+    font-size: 100pt;
+    text-align: center;
+    text-shadow: rgb(110, 110, 110) 0px 0px 1px;
+    color: aliceblue;
+    /* min-height: 180px; */
+}
+
+@media only screen and (max-width: 768px){
+    .text-image{
+        /* min-height: 90px; */
+        font-size: 30pt;
+    }
+}
+
+.mobile-logo{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .mobile-logo{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.my-footer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    text-align: center;
+    text-shadow: rgb(110, 110, 110) 0px 0px 1px;
+    color: white;
+    padding: 10px;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 0px;
+    min-width: 30%;
+}

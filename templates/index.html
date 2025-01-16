@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Excel2PPT Generator</title>
+</head>
+
+<body>
+   <link rel="stylesheet" href="/static/style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+   
+   <div class="outer-container">
+      <div>
+          <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f636_200d_1f32b_fe0f/512.webp" style="height: 100px; margin-top: -100px;"/>
+      </div>
+      <div class="main-card">
+         <div class="card-img-top">
+            <div class="text-image saira-stencil-one-regular ">Excel to PPT</div>
+            <div class="mobile-logo">
+               <img style="height: 80px;" src="../static/sheets.png">
+               <img style="height: 80px;" src="../static/powerpoint.png">
+            </div>
+         </div>
+         <div class="main-card-body">
+            <form method="post" enctype="multipart/form-data" id="uploadForm">
+               <div class="card-img-top">
+                  <input class="form-control" name="file" type="file" id="formFile" accept=".xlsx, .xls" required />
+               </div>
+               <!-- <div>
+                  <h3>Select Colors:</h3>
+                  <input type="checkbox" name="colors" value="#4B8BBE" />
+                  #4B8BBE<br />
+                  <input type="checkbox" name="colors" value="#FFCC00" />
+                  #FFCC00<br />
+                  <input type="checkbox" name="colors" value="#5DADEC" />
+                  #5DADEC<br />
+                  <input type="checkbox" name="colors" value="#9B59B6" />
+                  #9B59B6<br />
+                  <input type="checkbox" name="colors" value="#34495E" />
+                  #34495E<br />
+                  <input type="checkbox" name="colors" value="#BDC3C7" />
+                  #BDC3C7<br />
+                  <input type="checkbox" name="colors" value="#95A5A6" />
+                  #95A5A6<br />
+                  <input type="checkbox" name="colors" value="#F1C40F" />
+                  #F1C40F<br />
+                  <input type="checkbox" name="colors" value="#16A085" />
+                  #16A085<br /><br />
+
+               </div> -->
+               <div class="main-card-footer">
+                  <div class="btn-group" role="group" aria-label="Select chart or table">
+                     <input type="checkbox" class="btn-check"  name="charts" id="btncheck1" value="table" autocomplete="off">
+                     <label class="btn btn-outline-light" for="btncheck1">Table</label>
+                   
+                     <input type="checkbox" class="btn-check"  name="charts" id="btncheck2" value="pie" autocomplete="off">
+                     <label class="btn btn-outline-light" for="btncheck2">Pie Chart</label>
+                   
+                   </div>
+                  <div>
+                     <button type="submit" class="btn btn-light my-btn">Generate</button>
+                  </div>
+               </div>
+         </div>
+         </form>
+      </div>
+      <div>
+         <button id="resetButton" class="btn btn-outline-light my-btn" style="margin-top: 20px;">Reset</button>
+      </div>
+   </div>
+   <div style="width: 100%; display: flex; justify-content: center; align-items: center;" >
+      <div class="my-footer">
+         Developed with 🤍 by <a href="https://github.com/rksharma007">@rksharma007</a>😎
+      </div>
+   </div>
+   <link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css" />
+   <script src="../static/script.js"></script>
+   <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
+</body>
+
+</html>
