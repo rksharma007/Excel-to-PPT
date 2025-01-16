@@ -124,15 +124,15 @@ def create_table_slide(prs, title, labels, sizes):
     table.cell(0, 1).text = 'Frequency'
     table.cell(0, 2).text = 'Percentage'
 
-    total_responses = len(labels)
     total_frequency = sum(sizes)
+    total_responses = total_frequency
 
     for i in range(len(labels)):
         table.cell(i + 1, 0).text = labels[i]
         freq = int(sizes[i]) if sizes[i] is not None else 0  # Ensure frequency is an integer
         perc = (freq / total_responses) * 100 if total_responses > 0 else 0
         table.cell(i + 1, 1).text = str(freq)
-        table.cell(i + 1, 2).text = f"{perc:.1f}%"
+        table.cell(i + 1, 2).text = f"{perc:.2f}%"
 
     # Add Total row
     total_row_index = len(labels) + 1
