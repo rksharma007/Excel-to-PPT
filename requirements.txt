@@ -2,5 +2,5 @@ Flask==2.3.2
 pandas==2.2.3
 numpy==2.1.1
 matplotlib==3.6.2
-python-pptx==0.6.21
-openpyxl==3.0.10
+python-pptx==1.0.2
+openpyxl==3.1.5

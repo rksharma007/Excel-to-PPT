@@ -5,7 +5,6 @@ from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 import random
 import os
-import numpy as np
 from pptx.chart.data import CategoryChartData
 from pptx.enum.chart import XL_CHART_TYPE
 from pptx.enum.chart import XL_LABEL_POSITION
