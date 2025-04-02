@@ -62,7 +62,7 @@ def create_presentation(file_path, selected_colors, create_table, create_pie_cha
 
     slide_number = 1
 
-    for column in data.select_dtypes(include='object').columns:
+    for column in data.select_dtypes( for column in data.select_dtypes(include=['object', 'int64', 'float64']).columns:
         counts = data[column].value_counts(dropna=True)
 
         if counts.empty:
